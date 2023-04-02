@@ -2,10 +2,11 @@ import random
 import time
 import telebot
 from datetime import datetime, timedelta
+import pytz
 
 key_api = "5328905392:AAG29HHnR1vZQpCs5wcAvtDMfhzqJXzfrMA"
 bot = telebot.TeleBot(key_api)
-
+tz = pytz.timezone('America/Sao_Paulo')
 link_cadastro = "<a href='https://www.example.com'>Cadastre-se</a>"
 link_game = "<a href='https://www.example.com'>Ir para o Mines</a>"
 
@@ -26,8 +27,9 @@ def gerar_matriz():
 mensagem_inicial = f"💰 Entrada Confirmada 💰\n\n"
 
 while True:
+    
     n_minas = None
-    now = datetime.now() # pega a hora atual
+    now = datetime.now(tz) # pega a hora atual
     valid_until = now + timedelta(minutes=3) # define a hora de validade com base na hora atual, adicionando 3 minutos
     valid_until_str = valid_until.strftime("%H:%M") # formata a hora de validade em uma string
     
