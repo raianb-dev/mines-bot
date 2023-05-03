@@ -4,13 +4,13 @@ import telebot
 TOKEN = '5328905392:AAG29HHnR1vZQpCs5wcAvtDMfhzqJXzfrMA'
 bot = telebot.TeleBot(TOKEN)
 
-link = "<a href='https://www.brabet.com/?agentid=111992244'>CADASTRE-SE AQUI</a>"
+link = "<a href='https://arbety.com/home?ref=e13551a592ad4fcaa7d16a4c9f2bf9dd'>CADASTRE-SE AQUI</a>"
 
 # Mensagem que será enviada
-mensagem = f'🆘🆘 ATENÇÃO 🆘🆘\n\n⚠️ NOSSO SINAL SÓ FUNCIONA NA ESTRELABET ⚠️\n\nTEM MUITAS PESSOAS QUE ESTÃO TOMANDO RED PORQUE ESTÃO JOGANDO EM OUTRA CASA!\n\n🚨 NOSSOS SINAIS SÓ FUNCIONAM NA ESTRELA BET🚨\n\n ✍️ {link}\n\n CADASTRE-SE E COMECE A PEGAR OS GREEEENS'
+mensagem = f'🆘🆘 ATENÇÃO 🆘🆘\n\n⚠️ NOSSO SINAL SÓ FUNCIONA NA ARBETY ⚠️\n\nTEM MUITAS PESSOAS QUE ESTÃO TOMANDO RED PORQUE ESTÃO JOGANDO EM OUTRA CASA!\n\n🚨 NOSSOS SINAIS SÓ FUNCIONAM NA ARBETY🚨\n\n ✍️ {link}\n\n CADASTRE-SE E COMECE A PEGAR OS GREEEENS'
 
 # Cria o botão
-botao = telebot.types.InlineKeyboardButton(text='R$ 300,00 🎁', url='https://www.brabet.com/?agentid=111992244')
+botao = telebot.types.InlineKeyboardButton(text='🎁 BÔNUS 100%', url='https://arbety.com/home?ref=e13551a592ad4fcaa7d16a4c9f2bf9dd')
 
 # Cria o objeto de teclado inline e adiciona o botão
 teclado_inline = telebot.types.InlineKeyboardMarkup()
