@@ -4,7 +4,7 @@ key_api = "5328905392:AAG29HHnR1vZQpCs5wcAvtDMfhzqJXzfrMA"
 bot = telebot.TeleBot(key_api)
 tz = pytz.timezone('America/Sao_Paulo')
 link_cadastro = "<a href='https://arbety.com/home?ref=e13551a592ad4fcaa7d16a4c9f2bf9dd'> Cadastre aqui</a>"
-link_game = "<a href='https://www.brabet.com/?f=game_Mines'> Jogar agora</a>"
+link_game = "<a href='https://www.arbety.com/games/mines'> Jogar agora</a>"
 def gerar_matriz():
     n_minas = random.choice([2, 3, 4, 5])
     if n_minas == 2:
