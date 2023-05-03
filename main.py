@@ -33,11 +33,11 @@ while True:
     valid_until = now + timedelta(minutes=3) # define a hora de validade com base na hora atual, adicionando 3 minutos
     valid_until_str = valid_until.strftime("%H:%M") # formata a hora de validade em uma string
     matriz, n_minas = gerar_matriz()
-    mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟦' if valor == 0 else '⭐' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
+    mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟩' if valor == 0 else '💎' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
     chat_id = '-1001943217493'
     mensagem = bot.send_message(chat_id=chat_id, text="🔎 Validando entrada. Aguarde 🔎")
     time.sleep(18)
-    nova_mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟦' if valor == 0 else '⭐' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
+    nova_mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟩' if valor == 0 else '💎' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
     bot.edit_message_text(chat_id=chat_id, message_id=mensagem.message_id, text=nova_mensagem, parse_mode='html')
     time.sleep(180)
     bot.send_message(chat_id=chat_id, text=f"🔹 Sinal Finalizado 🔹\n🕑 Finalizado às {valid_until_str}\n✅✅✅GREEN✅✅✅")
