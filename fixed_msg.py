@@ -4,7 +4,7 @@ import telebot
 TOKEN = '5328905392:AAG29HHnR1vZQpCs5wcAvtDMfhzqJXzfrMA'
 bot = telebot.TeleBot(TOKEN)
 
-link = "<a href='www.exemple.com.br'>CADASTRE-SE AQUI</a>"
+link = "<a href='https://www.brabet.com/?agentid=111992244'>CADASTRE-SE AQUI</a>"
 
 # Mensagem que será enviada
 mensagem = f'🆘🆘 ATENÇÃO 🆘🆘\n\n⚠️ NOSSO SINAL SÓ FUNCIONA NA ESTRELABET ⚠️\n\nTEM MUITAS PESSOAS QUE ESTÃO TOMANDO RED PORQUE ESTÃO JOGANDO EM OUTRA CASA!\n\n🚨 NOSSOS SINAIS SÓ FUNCIONAM NA ESTRELA BET🚨\n\n ✍️ {link}\n\n CADASTRE-SE E COMECE A PEGAR OS GREEEENS'
