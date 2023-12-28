@@ -1,10 +1,12 @@
 import telebot, pytz, time, random
 from datetime import datetime, timedelta
+
+
 key_api = "5328905392:AAG29HHnR1vZQpCs5wcAvtDMfhzqJXzfrMA"
 bot = telebot.TeleBot(key_api)
 tz = pytz.timezone('America/Sao_Paulo')
-link_cadastro = "<a href='https://arbety.com/home?ref=e13551a592ad4fcaa7d16a4c9f2bf9dd'> Cadastre aqui</a>"
-link_game = "<a href='https://www.arbety.com/games/mines'> Jogar agora</a>"
+link_cadastro = "<a href='https://solcasino.life/cb2ab781a'> Cadastre aqui</a>"
+link_game = "<a href='https://sol.casino/pt/table/gamingcorps-coinminer2'> Jogar agora</a>"
 def gerar_matriz():
     n_minas = random.choice([2, 3, 4, 5])
     if n_minas == 2:
@@ -34,7 +36,7 @@ while True:
     valid_until_str = valid_until.strftime("%H:%M") # formata a hora de validade em uma string
     matriz, n_minas = gerar_matriz()
     mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟩' if valor == 0 else '💎' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
-    chat_id = '-1001943217493'
+    chat_id = '-1002007689565'
     mensagem = bot.send_message(chat_id=chat_id, text="🔎 Validando entrada. Aguarde 🔎")
     time.sleep(18)
     nova_mensagem = mensagem_inicial + f"💣 Minas: {n_minas}\n🔁 Nº de tentativas: {gerar_gale(n_minas)}\n🕑 Válido até: {valid_until_str}\n\n🔗{link_cadastro}\n🔗{link_game}\n\n" + '\n'.join([''.join(['🟩' if valor == 0 else '💎' for valor in linha]) for linha in matriz]).replace('0', '🟦').replace('1', '🟠')
